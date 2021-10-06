@@ -2,7 +2,7 @@ name: Check submodule changes
 on: 
   push:
     paths:
-      - 'child-module/**'
+      - 'child-module'
 jobs:
   build:
     runs-on: ubuntu-latest
