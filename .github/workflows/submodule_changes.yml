@@ -1,0 +1,11 @@
+name: Check submodule changes
+on: 
+  push:
+    paths:
+      - 'child-module/**'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo message
+        run: echo 'The workflow was triggered.'
